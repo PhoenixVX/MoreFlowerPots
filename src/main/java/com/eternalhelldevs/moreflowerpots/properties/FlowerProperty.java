@@ -35,7 +35,7 @@ public class FlowerProperty extends Property<Flower> {
 
     @Override
     public String name(Flower value) {
-        return getName();
+        return getName(value);
     }
 
     public Optional<Flower> parse(String value) {
