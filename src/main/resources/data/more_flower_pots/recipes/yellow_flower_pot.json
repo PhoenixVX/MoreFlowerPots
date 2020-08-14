@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:flower_pot"
+    },
+    "X": {
+      "item": "minecraft:yellow_dye"
+    }
+  },
+  "result": {
+    "item": "more_flower_pots:yellow_flower_pot",
+    "count": 8
+  }
+}

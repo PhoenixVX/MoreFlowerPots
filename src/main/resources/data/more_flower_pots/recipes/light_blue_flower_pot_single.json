@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:brick"
+    },
+    "X": {
+      "item": "minecraft:light_blue_dye"
+    }
+  },
+  "result": {
+    "item": "more_flower_pots:light_blue_flower_pot"
+  }
+}

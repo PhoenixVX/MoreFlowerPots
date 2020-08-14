@@ -1,0 +1,6 @@
+{
+	"parent": "more_flower_pots:block/pots/brown_flower_pot_cross",
+	"textures": {
+		"plant": "biomesoplenty:block/wilted_lily"
+	}
+}

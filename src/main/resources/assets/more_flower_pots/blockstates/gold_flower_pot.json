@@ -1,0 +1,94 @@
+{
+	"variants": {
+		"flower=air": {
+			"model": "more_flower_pots:block/pots/gold_flower_pot"
+		},
+		"flower=oak_sapling": {
+			"model": "more_flower_pots:block/potted/gold_potted_oak_sapling"
+		},
+		"flower=spruce_sapling": {
+			"model": "more_flower_pots:block/potted/gold_potted_spruce_sapling"
+		},
+		"flower=birch_sapling": {
+			"model": "more_flower_pots:block/potted/gold_potted_birch_sapling"
+		},
+		"flower=jungle_sapling": {
+			"model": "more_flower_pots:block/potted/gold_potted_jungle_sapling"
+		},
+		"flower=acacia_sapling": {
+			"model": "more_flower_pots:block/potted/gold_potted_acacia_sapling"
+		},
+		"flower=dark_oak_sapling": {
+			"model": "more_flower_pots:block/potted/gold_potted_dark_oak_sapling"
+		},
+		"flower=fern": {
+			"model": "more_flower_pots:block/potted/gold_potted_fern"
+		},
+		"flower=dandelion": {
+			"model": "more_flower_pots:block/potted/gold_potted_dandelion"
+		},
+		"flower=poppy": {
+			"model": "more_flower_pots:block/potted/gold_potted_poppy"
+		},
+		"flower=blue_orchid": {
+			"model": "more_flower_pots:block/potted/gold_potted_blue_orchid"
+		},
+		"flower=allium": {
+			"model": "more_flower_pots:block/potted/gold_potted_allium"
+		},
+		"flower=azure_bluet": {
+			"model": "more_flower_pots:block/potted/gold_potted_azure_bluet"
+		},
+		"flower=bamboo": {
+			"model": "more_flower_pots:block/potted/gold_potted_bamboo"
+		},
+		"flower=red_tulip": {
+			"model": "more_flower_pots:block/potted/gold_potted_red_tulip"
+		},
+		"flower=orange_tulip": {
+			"model": "more_flower_pots:block/potted/gold_potted_orange_tulip"
+		},
+		"flower=white_tulip": {
+			"model": "more_flower_pots:block/potted/gold_potted_white_tulip"
+		},
+		"flower=pink_tulip": {
+			"model": "more_flower_pots:block/potted/gold_potted_pink_tulip"
+		},
+		"flower=oxeye_daisy": {
+			"model": "more_flower_pots:block/potted/gold_potted_oxeye_daisy"
+		},
+		"flower=cornflower": {
+			"model": "more_flower_pots:block/potted/gold_potted_cornflower"
+		},
+		"flower=lily_of_the_valley": {
+			"model": "more_flower_pots:block/potted/gold_potted_lily_of_the_valley"
+		},
+		"flower=wither_rose": {
+			"model": "more_flower_pots:block/potted/gold_potted_wither_rose"
+		},
+		"flower=red_mushroom": {
+			"model": "more_flower_pots:block/potted/gold_potted_red_mushroom"
+		},
+		"flower=brown_mushroom": {
+			"model": "more_flower_pots:block/potted/gold_potted_brown_mushroom"
+		},
+		"flower=dead_bush": {
+			"model": "more_flower_pots:block/potted/gold_potted_dead_bush"
+		},
+		"flower=cactus": {
+			"model": "more_flower_pots:block/potted/gold_potted_cactus"
+		},
+		"flower=crimson_fungus": {
+			"model": "more_flower_pots:block/potted/gold_potted_crimson_fungus"
+		},
+		"flower=warped_fungus": {
+			"model": "more_flower_pots:block/potted/gold_potted_warped_fungus"
+		},
+		"flower=crimson_roots": {
+			"model": "more_flower_pots:block/potted/gold_potted_crimson_roots"
+		},
+		"flower=warped_roots": {
+			"model": "more_flower_pots:block/potted/gold_potted_warped_roots"
+		}
+	}
+}

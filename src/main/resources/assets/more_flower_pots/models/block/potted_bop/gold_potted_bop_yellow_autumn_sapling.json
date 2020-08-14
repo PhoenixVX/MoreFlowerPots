@@ -1,0 +1,6 @@
+{
+	"parent": "more_flower_pots:block/pots/gold_flower_pot_cross",
+	"textures": {
+		"plant": "biomesoplenty:block/yellow_autumn_sapling"
+	}
+}

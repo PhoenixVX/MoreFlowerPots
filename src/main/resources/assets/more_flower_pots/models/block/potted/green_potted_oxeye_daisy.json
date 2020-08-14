@@ -1,0 +1,6 @@
+{
+	"parent": "more_flower_pots:block/pots/green_flower_pot_cross",
+	"textures": {
+		"plant": "block/oxeye_daisy"
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "moreflowerpots",
+  "version": "${version}",
+  "name": "com.eternalhelldevs.moreflowerpots",
+  "description": "MoreFlowerPots ported to Fabric",
+  "authors": [
+    "EternalHellDevs"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/com.EternalHellDevs.MoreFlowerPots/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.eternalhelldevs.moreflowerpots.MoreFlowerPots"
+    ]
+  },
+  "mixins": [
+    "com.eternalhelldevs.moreflowerpots.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.9.1+build.205",
+    "fabric": "*",
+    "minecraft": "1.16.1"
+  }
+}

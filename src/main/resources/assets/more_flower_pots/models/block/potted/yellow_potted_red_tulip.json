@@ -1,0 +1,6 @@
+{
+	"parent": "more_flower_pots:block/pots/yellow_flower_pot_cross",
+	"textures": {
+		"plant": "block/red_tulip"
+	}
+}
