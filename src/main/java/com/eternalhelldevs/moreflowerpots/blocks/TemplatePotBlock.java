@@ -48,7 +48,7 @@ public class TemplatePotBlock extends Block {
             Block flower = state.get(TemplatePotBlock.FLOWER).getBlock();
             if (!player.isCreative() && !flower.equals(Blocks.AIR)) {
                 BlockPos playerPos = new BlockPos(player.getX(), player.getY(), player.getZ());
-                Block.dropStack(world.getWorld(), playerPos, new ItemStack(flower));
+                Block.dropStack(world, playerPos, new ItemStack(flower));
             }
         }
     }
