@@ -6,7 +6,6 @@ import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stat.Stats;
 import net.minecraft.state.StateManager;
@@ -30,7 +29,6 @@ public class TemplatePotBlock extends Block {
     }
 
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-
         builder.add(FLOWER);
     }
 

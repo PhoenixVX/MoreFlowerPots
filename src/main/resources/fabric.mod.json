@@ -12,8 +12,11 @@
   "icon": "assets/com.EternalHellDevs.MoreFlowerPots/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
+    "main": [
       "com.eternalhelldevs.moreflowerpots.MoreFlowerPots"
+    ],
+    "client": [
+      "com.eternalhelldevs.moreflowerpots.MoreFlowerPotsClient"
     ]
   },
   "depends": {
