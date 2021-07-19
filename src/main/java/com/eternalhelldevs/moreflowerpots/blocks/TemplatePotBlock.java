@@ -66,7 +66,7 @@ public class TemplatePotBlock extends Block {
                 Identifier rl = Registry.BLOCK.getId(flowerIn);
                 worldIn.setBlockState(pos, this.getDefaultState().with(FLOWER, (rl.getNamespace().equals("biomesoplenty") ? Flower.FLOWERS.get("bop_" + rl.getPath()) : Flower.FLOWERS.get(rl.getPath()))), 3);
                 player.incrementStat(Stats.POT_FLOWER);
-                if (!player.abilities.creativeMode) {
+                if (!player.getAbilities().creativeMode) {
                     itemstack.decrement(1);
                 }
             } else {
