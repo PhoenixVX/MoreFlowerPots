@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "more_flower_pots:items/magenta_flower_pot"
+		"layer0": "more_flower_pots:item/magenta_flower_pot"
 	}
 }

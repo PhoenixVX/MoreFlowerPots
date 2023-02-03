@@ -1,8 +1,8 @@
 {
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "more_flower_pots:blocks/pink_flower_pot",
-		"flowerpot": "more_flower_pots:blocks/pink_flower_pot",
+		"particle": "more_flower_pots:block/pink_flower_pot",
+		"flowerpot": "more_flower_pots:block/pink_flower_pot",
 		"dirt": "block/dirt",
 		"plant": "biomesoplenty:block/potted_sprout"
 	},

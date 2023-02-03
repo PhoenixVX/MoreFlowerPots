@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "more_flower_pots:items/light_blue_glazed_flower_pot"
+		"layer0": "more_flower_pots:item/light_blue_glazed_flower_pot"
 	}
 }

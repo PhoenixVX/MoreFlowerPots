@@ -1,8 +1,8 @@
 {
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "more_flower_pots:blocks/red_glazed_flower_pot",
-		"flowerpot": "more_flower_pots:blocks/red_glazed_flower_pot",
+		"particle": "more_flower_pots:block/red_glazed_flower_pot",
+		"flowerpot": "more_flower_pots:block/red_glazed_flower_pot",
 		"dirt": "block/dirt"
 	},
 	"elements": [

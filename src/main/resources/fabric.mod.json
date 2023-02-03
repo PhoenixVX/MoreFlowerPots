@@ -9,7 +9,7 @@
   ],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/com.EternalHellDevs.MoreFlowerPots/icon.png",
+  "icon": "assets/more_flower_pots/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -22,6 +22,6 @@
   "depends": {
     "fabricloader": ">=0.9.1+build.205",
     "fabric": "*",
-    "minecraft": ">=1.16.1"
+    "minecraft": ">=1.19"
   }
 }

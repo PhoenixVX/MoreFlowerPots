@@ -21,7 +21,7 @@ public class FlowerProperty extends Property<Flower> {
         super(name, valueClass);
         this.allowedValues = ImmutableSet.copyOf(allowedValues);
         for (Flower f : allowedValues) {
-            String s = f.getName();
+            String s = f.name();
             if (this.nameToValue.containsKey(s)) {
                 throw new IllegalArgumentException("Multiple values have the same name '" + s + "'");
             }
@@ -29,6 +29,7 @@ public class FlowerProperty extends Property<Flower> {
         }
     }
 
+    @Override
     public Collection<Flower> getValues() {
         return this.allowedValues;
     }
@@ -38,25 +39,26 @@ public class FlowerProperty extends Property<Flower> {
         return getName(value);
     }
 
+    @Override
     public Optional<Flower> parse(String value) {
         return Optional.ofNullable(this.nameToValue.get(value));
     }
 
     public String getName(Flower value) {
-        return value.getName();
+        return value.name();
     }
 
     public boolean equals(Object p_equals_1_) {
         if (this == p_equals_1_) {
             return true;
         }
-        if (p_equals_1_ instanceof FlowerProperty && super.equals(p_equals_1_)) {
-            FlowerProperty flowerProperty = (FlowerProperty) p_equals_1_;
+        if (p_equals_1_ instanceof FlowerProperty flowerProperty && super.equals(p_equals_1_)) {
             return this.allowedValues.equals(flowerProperty.allowedValues) && this.nameToValue.equals(flowerProperty.nameToValue);
         }
         return false;
     }
 
+    @Override
     public int computeHashCode() {
         int i = super.computeHashCode();
         i = 31 * i + this.allowedValues.hashCode();

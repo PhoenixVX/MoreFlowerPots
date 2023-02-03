@@ -11,7 +11,6 @@ import java.lang.reflect.Field;
 public class MoreFlowerPotsClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		// Where else should i put this?
 		for (Field field : RegistryHandler.class.getDeclaredFields()) {
 			try {
 				Object object = field.get(null);

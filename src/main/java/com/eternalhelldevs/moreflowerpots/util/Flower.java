@@ -1,35 +1,28 @@
 package com.eternalhelldevs.moreflowerpots.util;
 
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class Flower implements Comparable<Flower> {
-    public static final HashMap<String, Flower> FLOWERS = new HashMap();
+public record Flower(String name, Block block) implements Comparable<Flower> {
+    public static final HashMap<String, Flower> FLOWERS = new HashMap<>();
     public static final Flower NONE;
-    private final Block block;
-    private final String name;
 
     public static Collection<Block> getAllFlowerBlocks() {
-        HashSet<Block> blocks = new HashSet<Block>();
+        HashSet<Block> blocks = new HashSet<>();
         for (Flower flower : FLOWERS.values()) {
             blocks.add(flower.block); // getBlock()?
         }
         return blocks;
     }
 
-    public Flower(String name, Block block) {
-        this.name = name;
-        this.block = block;
-    }
-
     @Override
-    public int compareTo(Flower o) {
+    public int compareTo(@NotNull Flower o) {
         if (!FLOWERS.containsValue(this)) {
             if (!FLOWERS.containsValue(o)) {
                 return 0;
@@ -42,18 +35,10 @@ public class Flower implements Comparable<Flower> {
         return 0;
     }
 
-    public String getName() {
-        return this.name;
-    }
-
-    public Block getBlock() {
-        return this.block;
-    }
-
     static {
         FLOWERS.put("air", new Flower("air", Blocks.AIR));
         for (Block block : ModUtil.PLANTS) {
-            FLOWERS.put(Registry.BLOCK.getId(block).getPath(), new Flower(Registry.BLOCK.getId(block).getPath(), block));
+            FLOWERS.put(Registries.BLOCK.getId(block).getPath(), new Flower(Registries.BLOCK.getId(block).getPath(), block));
         }
         /* BOP is not available on Fabric.
         if (FabricLoader.getInstance().getAllMods().contains("biomesoplenty")) {

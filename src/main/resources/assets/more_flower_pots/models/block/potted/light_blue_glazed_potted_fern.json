@@ -1,6 +1,6 @@
 {
 	"parent": "more_flower_pots:block/pots/light_blue_glazed_flower_pot_cross",
 	"textures": {
-		"plant": "more_flower_pots:blocks/static_fern"
+		"plant": "more_flower_pots:block/static_fern"
 	}
 }

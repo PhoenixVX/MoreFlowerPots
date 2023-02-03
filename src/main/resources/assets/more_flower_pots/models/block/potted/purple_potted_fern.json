@@ -1,10 +1,10 @@
 {
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "more_flower_pots:blocks/purple_flower_pot",
-		"flowerpot": "more_flower_pots:blocks/purple_flower_pot",
+		"particle": "more_flower_pots:block/purple_flower_pot",
+		"flowerpot": "more_flower_pots:block/purple_flower_pot",
 		"dirt": "block/dirt",
-		"plant": "more_flower_pots:blocks/static_fern"
+		"plant": "more_flower_pots:block/static_fern"
 	},
 	"elements": [
 		{   "from": [ 5, 0, 5 ],

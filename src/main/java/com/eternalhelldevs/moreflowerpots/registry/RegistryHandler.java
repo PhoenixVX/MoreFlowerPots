@@ -2,18 +2,20 @@ package com.eternalhelldevs.moreflowerpots.registry;
 
 import com.eternalhelldevs.moreflowerpots.MoreFlowerPots;
 import com.eternalhelldevs.moreflowerpots.blocks.TemplatePotBlock;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.*;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 import java.lang.reflect.Field;
 
 public class RegistryHandler {
-    public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.create(
+    public static final ItemGroup ITEM_GROUP = FabricItemGroup.builder(
             new Identifier(MoreFlowerPots.MOD_ID, "item_group"))
             .icon(() -> new ItemStack(Items.FLOWER_POT))
             .build();
@@ -59,8 +61,9 @@ public class RegistryHandler {
                 if (object instanceof Block block) {
                     Identifier identifier = new Identifier(MoreFlowerPots.MOD_ID, field.getName().toLowerCase());
 
-                    Registry.register(Registry.BLOCK, identifier, block);
-                    Registry.register(Registry.ITEM, identifier, new BlockItem(block, new Item.Settings().group(ITEM_GROUP)));
+                    Registry.register(Registries.BLOCK, identifier, block);
+                    Item registeredItem = Registry.register(Registries.ITEM, identifier, new BlockItem(block, new Item.Settings()));
+                    ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP).register(entries -> entries.add(registeredItem));
                 }
             } catch (Exception ex) {
                 ex.printStackTrace();
