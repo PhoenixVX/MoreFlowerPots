@@ -2,16 +2,12 @@ package com.eternalhelldevs.moreflowerpots.properties;
 
 import com.eternalhelldevs.moreflowerpots.util.Flower;
 import com.google.common.collect.ImmutableSet;
-import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import net.minecraft.state.property.Property;
 
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.Map;
 import java.util.Optional;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class FlowerProperty extends Property<Flower> {
     private final ImmutableSet<Flower> allowedValues;
@@ -64,14 +60,6 @@ public class FlowerProperty extends Property<Flower> {
         i = 31 * i + this.allowedValues.hashCode();
         i = 31 * i + this.nameToValue.hashCode();
         return i;
-    }
-
-    public static FlowerProperty create(String name, Predicate<Flower> filter) {
-        return FlowerProperty.create(name, Arrays.stream(Flower.FLOWERS.values().toArray(new Flower[0])).filter(filter).collect(Collectors.toList()));
-    }
-
-    public static FlowerProperty create(String name, Flower ... flowers) {
-        return FlowerProperty.create(name, Lists.newArrayList(flowers));
     }
 
     public static FlowerProperty create(String name, Collection<Flower> values) {

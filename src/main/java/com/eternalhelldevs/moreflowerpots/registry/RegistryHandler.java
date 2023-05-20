@@ -14,6 +14,7 @@ import net.minecraft.util.Identifier;
 
 import java.lang.reflect.Field;
 
+@SuppressWarnings("unused")
 public class RegistryHandler {
     public static final ItemGroup ITEM_GROUP = FabricItemGroup.builder(
             new Identifier(MoreFlowerPots.MOD_ID, "item_group"))

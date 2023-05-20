@@ -49,7 +49,7 @@ public class TemplatePotBlock extends Block {
         if (state.getBlock() instanceof TemplatePotBlock) {
             Block flower = state.get(TemplatePotBlock.FLOWER).block();
             if (!player.isCreative() && !flower.equals(Blocks.AIR)) {
-                BlockPos playerPos = new BlockPos(player.getX(), player.getY(), player.getZ());
+                BlockPos playerPos = BlockPos.ofFloored(player.getX(), player.getY(), player.getZ());
                 Block.dropStack(world, playerPos, new ItemStack(flower));
             }
         }
@@ -61,8 +61,8 @@ public class TemplatePotBlock extends Block {
         ItemStack itemstack = player.getStackInHand(handIn);
         Item item = itemstack.getItem();
         Block flowerIn = Blocks.AIR;
-        if (item instanceof BlockItem && Flower.getAllFlowerBlocks().contains(((BlockItem)item).getBlock())) {
-            flowerIn = ((BlockItem)item).getBlock();
+        if (item instanceof BlockItem blockItem && Flower.getAllFlowerBlocks().contains(blockItem.getBlock())) {
+            flowerIn = blockItem.getBlock();
         }
         boolean doesNotHoldFlower = flowerIn == Blocks.AIR;
         potIsEmpty = (worldIn.getBlockState(pos).get(FLOWER)).block() == Blocks.AIR;
