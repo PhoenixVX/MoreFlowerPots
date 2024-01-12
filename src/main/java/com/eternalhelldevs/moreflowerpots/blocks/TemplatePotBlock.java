@@ -45,7 +45,7 @@ public class TemplatePotBlock extends Block {
     }
 
     @Override
-    public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
+    public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
         if (state.getBlock() instanceof TemplatePotBlock) {
             Block flower = state.get(TemplatePotBlock.FLOWER).block();
             if (!player.isCreative() && !flower.equals(Blocks.AIR)) {
@@ -53,6 +53,7 @@ public class TemplatePotBlock extends Block {
                 Block.dropStack(world, playerPos, new ItemStack(flower));
             }
         }
+        return state;
     }
 
     @Override

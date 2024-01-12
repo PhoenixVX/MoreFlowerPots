@@ -4,7 +4,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 
 public class ModUtil {
-    public static final String[] COLORS = new String[]{"white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray", "cyan", "purple", "blue", "brown", "green", "red", "black", "iron", "gold"};
     public static final Block[] PLANTS = new Block[]{Blocks.OAK_SAPLING,
             Blocks.SPRUCE_SAPLING,
             Blocks.BIRCH_SAPLING,
@@ -34,5 +33,4 @@ public class ModUtil {
             Blocks.WARPED_FUNGUS,
             Blocks.CRIMSON_ROOTS,
             Blocks.WARPED_ROOTS};
-    public static Block[] NEW_PLANTS = new Block[]{Blocks.CRIMSON_FUNGUS, Blocks.WARPED_FUNGUS, Blocks.CRIMSON_ROOTS, Blocks.WARPED_ROOTS};
 }

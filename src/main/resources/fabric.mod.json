@@ -8,7 +8,7 @@
     "EternalHellDevs"
   ],
   "contact": {},
-  "license": "MIT",
+  "license": "CC BY-NC-SA 4.0",
   "icon": "assets/more_flower_pots/icon.png",
   "environment": "*",
   "entrypoints": {
@@ -17,11 +17,14 @@
     ],
     "client": [
       "com.eternalhelldevs.moreflowerpots.MoreFlowerPotsClient"
+    ],
+    "fabric-datagen": [
+      "com.eternalhelldevs.moreflowerpots.MFPDataGenerator"
     ]
   },
   "depends": {
-    "fabricloader": ">=0.9.1+build.205",
+    "fabricloader": ">=0.12",
     "fabric": "*",
-    "minecraft": ">=1.19"
+    "minecraft": ">=1.20"
   }
 }
